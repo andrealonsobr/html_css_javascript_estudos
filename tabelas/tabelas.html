@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{position: relative;
+            border: 1px solid black;
+            border-collapse:collapse;width: 500px;}
+        th{border: 1px solid black;;
+            ;height: 20px;
+            font-size: 1.5em;
+            background-color: rgb(60, 60, 60);color: white;}
+        td{border: 1px solid black;;
+            ;height: 20px;
+            }
+        th.tipo3{width: 80px;}
+
+        tr:hover{;background-color: rgb(28, 28, 28);color: white;}
+       td.number{text-align: right;}
+        thead>tr>th{position: sticky;top: 0;}
+        thead{background-color: rgb(198, 198, 198);}
+        caption{background-color: grey;}
+        td#subtitle{background-color: rgb(60, 60, 60);color: white;}
+
+        col.nota1{background-color: brown;}
+        table.responsiva{width: 85%;margin: auto;}
+        
+
+    </style>
+</head>
+<body>
+    <h1>TABELAS</h1>
+
+
+    <h1>TABELAS</h1>
+ 
+    <h1>expansão de column row</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <table class="responsiva">
+        <H1>Responsividade em Tabela</H1>
+        
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Maio</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </tr>
+
+         
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto</td>
+                <td>3</td>
+                <td>8</td>
+                <td>50</td>
+                <td>2</td>
+                <td>6</td>
+                <td>10</td>
+                <td>32</td>
+                <td>21</td>
+                <td>15</td>
+                <td>5</td>
+                <td>12</td>
+                
+            </tr>
+            <tr>
+                <td>Produto</td>
+                <td>3</td>
+                <td>8</td>
+                <td>50</td>
+                <td>2</td>
+                <td>6</td>
+                <td>10</td>
+                <td>32</td>
+                <td>21</td>
+                <td>15</td>
+                <td>5</td>
+                <td>12</td>
+                
+            </tr>
+            <tr>
+                <td>Produto</td>
+                <td>3</td>
+                <td>8</td>
+                <td>50</td>
+                <td>2</td>
+                <td>6</td>
+                <td>10</td>
+                <td>32</td>
+                <td>21</td>
+                <td>15</td>
+                <td>5</td>
+                <td>12</td>
+                
+            </tr>
+            <tr>
+                <td>Produto</td>
+                <td>3</td>
+                <td>8</td>
+                <td>50</td>
+                <td>2</td>
+                <td>6</td>
+                <td>10</td>
+                <td>32</td>
+                <td>21</td>
+                <td>15</td>
+                <td>5</td>
+                <td>12</td>
+                
+            </tr>
+
+        </tbody>
+    </table>
+
+    <H1>TABLE , TABLE ROW , TABLE HEADER , TABLE DATA</H1>  
+    <table>
+
+        <caption> tabela aleatória</caption>
+        <thead>
+            <tr>
+                <th scope="col" >Nome</th>
+                <th scope="col" >Sexo</th>
+                <th class="tipo3" scope="col" style="50px">Idade</th>
+            </tr>
+        </thead>
+
+    
+            
+        </tr>
+        
+<h1>TABELA COMPRIDA COM HEADER MÓVEL</h1>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td class="b1">homem</td>
+                <td class="number">23</td>
+            </tr>
+            <tr class="linha2">
+                <td>Maria</td>
+                <td>mulher</td>
+                <td class="number">19</td>
+            </tr>
+            <tr>
+                <td>Rogério</td>
+                <td>Homem</td>
+                <td class="number">67</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>foot 1</th>
+                <th>foot2</th>
+                <th>foot3</th>
+            </tr>
+        </tfoot>
+    </table>
+
+        <h1>exercicio 1</h1>
+        <table>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th rowspan="2">3</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>6</th>
+                
+                <th>7</th>
+            </tr>
+            <tr>
+                <th colspan="3">8</th>
+                <th>9</th>
+                
+            </tr>
+            <tr>
+                <th rowspan="2">10</th>
+                <th colspan="2">11</th>
+                <th>12</th>
+                
+            </tr>
+            <tr>
+               
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+            </tr>
+        </table>
+        <h1>exercicio 2</h1>
+    
+        <table>
+            <tr>
+                <th colspan="4">1</th>
+                <th rowspan="4">2</th>
+                
+            <tr>
+                <th rowspan="4">3</th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                
+            </tr>
+            <tr>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                
+            </tr>
+            <tr>
+                <th>g</th>
+                <th>h</th>
+                <th>i</th>
+               
+            </tr>
+            <tr>
+                <th colspan="4">4</th>
+                
+            </tr>
+        </table>
+
+        <h1>exercicio 3</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Sexo</th>
+                    <th>Nomes</th>
+                    <th colspan="3">Filmes</th>
+                    
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="3">Homens</td>
+                    <td>homem1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    
+                </tr>
+                <tr>
+                    <td>homem2</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    
+                </tr>
+                <tr>
+                    <td>homem3</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    
+                </tr>
+                <tr>
+                    <td rowspan=" 3">Mulheres</td>
+                    <td>mulher1</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>mulher2</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    
+                </tr>
+                <tr>
+                    <td>mulher3</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</th>
+                    
+                </tr>
+            </tbody>
+
+        </table>
+
+        
+
+    </table>
+
+    <h1>exercicio 4</h1>
+    <table>
+        <colgroup>
+            <col class="tipo">
+            <col class="disciplinas">
+            <col class="nota1">
+            <col class="nota2">
+            <col class="media">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                
+                <th  rowspan="2" scope="col">Média</th>
+             </tr>
+             <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+             </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="4">Exatas</td>
+                <td >Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Cálculo</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="subtitle" colspan="4">Média de Exatas</th>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Exatas</td>
+                <td>Português</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <th scope="row" id="subtitle" colspan="4">Média de Humanas</th>
+            <td>0.0</td>
+        
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{ position: relative;border: 1px solid black;border-collapse: separate;background-color: rgb(219, 144, 97);}
+        td{border: 1px solid grey;background-color: white;width: 600px;height: 600px;}
+        thead>tr>th {position: sticky; top: 0;}
+        td.pkms{background-image: url(img/3.png);background-size: contain;background-repeat: no-repeat;background-position: center;}
+
+    </style>
+</head>
+<body>
+    <script>
+        nome=window.prompt("Olá, qual seu nome?")
+        window.alert('olá '+ nome +', Seja bem Vindo!')
+        document.write('Seu nome é :' +nome)
+       
+    </script>
+    
+    <table>
+        
+        <h1></h1>
+        <caption>lista qualquer</caption>
+        <thead>
+            <th></th>
+            <th>fila1</a></th>
+            <th>fila2</th>
+            <th>fila3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>A</th>
+                <td><img src="img/3.png" alt=""></td>
+                <td>A2</td>
+                <td class="pkms">A3</td>
+            </tr>
+                <tr>
+                    <TH>B</TH>
+                    <td>B1</td>
+                    <td>b2</td>
+                    <td>B3</td>
+                </tr>
+            <tr>
+                <TH>C</TH>
+                <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+ 
+</body>
+</html>

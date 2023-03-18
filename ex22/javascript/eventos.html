@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{background-color: bisque;}
+    input{width: 300px;height: 100px;font-size: 3em;}
+    div#res{background-color: green;font-size: 3em;width:300px;height: 100px;font-size: 3em;border: 2px solid black;}
+    input#botao:hover{background-color: rgb(178, 178, 178);}
+div#grande{display: inline;}
+    div#area{background-color: green; height: 400px;width: 400px;color: white;text-align: center;font-size: 5em;vertical-align: text-bottom;}
+</style>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()" onmousedown="segurar()">Interaja</div>
+    
+    <script>
+        var bloco = window.document.getElementById('area')
+        function clicar( ){ bloco.innerText='clicou!' }
+        function entrar() {bloco.style.background ='red'}
+        function sair(){bloco.style.background = 'green'}
+        function segurar(){
+            bloco.style.background='blue'
+            bloco.innertext='Me Segura!!!'}
+        
+            
+    </script>
+        <div id="grande">
+            <input id="n1" type="number">
+            <input id="n2" type="number">
+            <input id="botao" type="button" value="Somar" onclick="soma()">
+            <div id="res">resultado</div>
+        </div>
+    <script>
+      function soma(){
+        var tn1= window.document.getElementById('n1')
+        var tn2=window.document.getElementById('n2')
+        var res=window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2= Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML= s
+        
+        }
+    
+
+        
+    </script>
+
+    <script>
+
+        
+        var n1=3
+        var n2=5
+        document.write(n2)
+    </script>
+</body>
+</html>

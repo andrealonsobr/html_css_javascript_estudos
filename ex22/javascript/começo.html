@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var alf = 5+2
+    window.document.write('olá mundo'+alf)
+    
+</script>
+<body>
+    <p>
+        <strong>testando</strong>
+    </p>
+    <p>
+        testando 2
+    </p>
+    <h1 class="teste" id="identidade"> titulo</h1>
+    <script>
+        var p1= window.document.getElementsByTagName('p')[0].innerHTML
+        window.document.write('está escrito :'+p1)
+    </script>
+    
+    <script>
+        var x = document.getElementById('identidade').innerHTML
+        window.document.write(x)
+    </script>
+
+    <script>
+        document.write(document.querySelector('h1#identidade').innerHTML)
+        document.write(document.querySelectorAll('p')innerHTML)
+
+    </script>
+</body>
+</html>

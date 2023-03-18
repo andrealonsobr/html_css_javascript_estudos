@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 300px;height: 100px;border: 2px solid black;text-align: center;}
+    </style>
+</head>
+<body>
+    
+    <input type="number" name="numero 1" id="tn1" value="n1">
+    <input type="number" name="numero 2" id="tn2" value="n2">
+    <br>
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="dividir" id="dividir" onclick="dividir()">
+    <input type="button" value="Elevado" onclick="quadrado()">
+    <input type="button" value="Raiz " onclick="raiz()">
+    <div id="resultado">Resultado</div>
+
+
+
+
+
+    <script>
+        function raiz (){
+            var tn1= document.getElementById('tn1')
+            var tn2=document.getElementById('tn2')
+            var n1=Number(tn1.value)
+            var n2=Number(tn2.value)
+            var raiz =n1 ** (1/n2)
+            document.getElementById('resultado').innerText = raiz
+            
+        }
+
+        function somar(){
+            var tn1= document.getElementById('tn1')
+            var tn2=document.getElementById('tn2')
+            var n1=Number(tn1.value)
+            var n2=Number(tn2.value)
+            var res=document.getElementById('resultado')
+            soma=n1+n2
+            res.innerHTML=soma
+        }
+
+        function multiplicar(){
+            var tn1 =document.getElementById('tn1')
+            var tn2=document.getElementById('tn2')
+            var n1=Number(tn1.value)
+            var n2=Number(tn2.value)
+            var res=document.getElementById('resultado')
+            multiplicacao=n1*n2
+            res.innerText=multiplicacao
+            
+
+        }
+    
+        function dividir(){
+            var tn1=document.getElementById('tn1')
+            var tn2=document.getElementById('tn2')
+            var n1=Number(tn1.value)
+            var n2=Number(tn2.value)
+            var divisao=n1/n2
+            res=document.getElementById('resultado')
+            res.innerText=divisao
+        }
+    
+    function quadrado(){
+        var tn1=document.getElementById('tn1')
+        var tn2=document.getElementById('tn2')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var quad= n1**n2
+        document.getElementById('resultado').innerText=quad
+        
+
+        
+
+    }
+    </script>
+
+    <br>
+    <h1>Sistema de Multas</h1>
+    <input type="number" id="txtvel">
+    <input type="button" value="testar" onclick="teste()">
+    <div id="resultado2"> resultado</div>
+    <script>
+
+
+        function teste(){
+            var txtvel = document.getElementById('txtvel')
+            var vel=Number(txtvel.value)
+            if (vel>80){document.getElementById('resultado2').innerHTML=('Velocidade do Veículo: '+vel+'km/h <br> <strong><h3>MULTADO POR EXCESSO DE VELOCIDADE!</h3></strong>')
+                         document.getElementById('resultado2').style.background='red'}
+            else if(vel<20){
+                document.getElementById('resultado2').innerHTML='Velocidade do Veículo: '+vel+'km/h <br> <strong><h3>ATENÇÃO, VELOCIDADE ABAIXO DO PERMITIDO</h3></strong>'
+                document.getElementById('resultado2').style.background='yellow'}
+            else{ document.getElementById('resultado2').innerHTML='Velocidade do Veículo: '+vel+'km/h <br> <h3><STRONG>TENHA UMA BOA VIAGEM</STRONG></h3>'
+                    document.getElementById('resultado2').style.background='green'}
+            
+        
+            
+                        
+            
+        }
+    </script>
+
+    
+</body>
+</html>
+
